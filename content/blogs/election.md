@@ -3,7 +3,7 @@ categories:
 - ""
 - ""
 date: "`r Sys.Date()`"
-description: ""
+description: "2016 California Contributors Plots"
 draft: false
 image: pic10.jpg
 keywords: ""
@@ -11,6 +11,19 @@ slug: US Election
 title: US Election
 ---
 
+```{r load-libraries, include=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggthemes)
+library(lubridate)
+library(here)
+library(skimr)
+library(janitor)
+library(httr)
+library(readxl)
+library(vroom)
+library(infer)
+```
 
 ```{r challenge2, echo=FALSE, out.width="100%"}
 knitr::include_graphics("challenge2.png", error = FALSE)

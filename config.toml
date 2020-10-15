@@ -92,16 +92,16 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "Aliquam"
-      subtitle = "Ipsum Dolor Sit Amet"
+      title = "US Election"
+      subtitle = "2016 California Contributors Plots"
       image = "pic01.jpg"
-      url = "blogs/aliquam"
+      url = "blogs/election"
 
     [[params.tiles.showcase]]
-      title = "Tempus"
-      subtitle = "Feugiat Amet Tempus"
+      title = "Social Use"
+      subtitle = "General Social Survey (GSS)"
       image = "pic02.jpg"
-      url = "blogs/tempus"
+      url = "blogs/social"
 
     [[params.tiles.showcase]]
       title = "Magna"

@@ -10,12 +10,26 @@ keywords: ""
 slug: Social Uses
 title: Social Uses
 ---
+
 # General Social Survey (GSS)
 
 The [General Social Survey (GSS)](http://www.gss.norc.org/) gathers data on American society in order to monitor and explain trends in attitudes, behaviours, and attributes. Many trends have been tracked for decades, so one can see the evolution of attitudes, etc in American Society.
 
 In this project I want to analyze data from the **2016 GSS sample data**, using it to estimate values of *population parameters* of interest about US adults. 
 
+```{r load-libraries, include=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggthemes)
+library(lubridate)
+library(here)
+library(skimr)
+library(janitor)
+library(httr)
+library(readxl)
+library(vroom)
+library(infer)
+```
 
 ```{r, read_gss_data, cache=TRUE}
 gss <- read_csv(here::here("data", "smallgss2016.csv"), 
